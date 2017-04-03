@@ -32,8 +32,6 @@ function getData1(calories1, distance1, callback) {
 
 
 
-// Function with things needed to draw the chart (as before)
-
 function setData(calories1, distance1, callback) {
 
     function chartType(data, purpose) {
@@ -98,17 +96,15 @@ function drawChart(calData, distData) {
     console.log(calData);
     var caloriesLine = new Chart(ctxCalories,calData, {
         responsive: true,
-        // legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+        
     });
     console.log(caloriesLine);
-    
-    //window.caloriesLine = caloriesLine;
 
     var ctxDistance = document.getElementById("distanceChart")
     var distanceBar = new Chart(ctxDistance,distData, {
         responsive: true
     });
 
-    // window.distanceBar = distanceBar;
+ 
 
 }
