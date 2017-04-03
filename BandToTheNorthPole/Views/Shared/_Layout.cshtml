@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <title>@ViewBag.Title </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body background="Images/background.jpg" >
+    <div class="navbar navbar-default navbar-fixed-top" style="height : 61px">
+        <div class="container">
+            <a href="google.com" class="navbar-left">
+            <img src=" ~/Images/Antarctica-icon.png" style="width: 100px; position: relative; left: -50px;">
+            </a>
+            <div class="navbar-header" style="padding-top : 5px; position: relative; left:-50px; ">
+                
+                @Html.ActionLink("Sample text", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+                
+            
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        
+    </div>
+    <footer style="text-align:center; border-top:50px;">
+        <p>&copy; @DateTime.Now.Year - Fantastic footer </p>
+
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

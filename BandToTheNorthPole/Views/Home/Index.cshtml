@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron"   style="position: relative; right: 2px; ">
+    <div class="col-md-4">
+        <img src="~/Images/GettyImages-487420324.0.jpg" width="300" height="200" align="left" class="img-responsive">
+    </div>
+    <h1>Meaningful title</h1>
+    <p class="lead">Blah blah description  </br> find out more </p>
+    <p><a class="btn btn-default" href="https://www.youtube.com/watch?v=LaYPWtNvJ-A">Info/Donate or something &raquo;</a></p>
+
+    @*<p><a href="https://google.com" class="btn btn-primary btn-lg">More info/ Donate &raquo;</a></p>*@
+</div>
+
+
+<div class="col-md-6" style="position: relative; left:50px; padding-bottom: 300px ; padding-top: 300px;  ">
+    <p> Soon to be cool looking footer of the graph </p>
+    <div style="width : 400px">
+        <canvas id="distanceChart" width="400" height="400"></canvas>
+    </div>
+
+</div>
+
+<div class="col-md-6" style="position: relative; left:50px; padding-bottom: 300px ; padding-top: 300px;  ">
+    <p> Both graphs use some random json from the web </p>
+    <div style="width : 400px">
+        <canvas id="calorieChart" width="400" height="400"></canvas>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+
+    <a class="twitter-timeline" data-height="200" data-width="400" href="https://twitter.com/realdonaldtrump"> Tweets by Dat boy</a>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8" ></script>
+
+
+</div>
+<div class="col-md-6">
+    <br />
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+<script src="~/Scripts/DrawStuff.js"></script>
+
